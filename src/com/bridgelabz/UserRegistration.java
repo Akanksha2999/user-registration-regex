@@ -27,5 +27,8 @@ public class UserRegistration {
 
         boolean password_3 = Pattern.matches("(?=.*[A-Z])(?=.*\\d)[a-z A-Z 0-9]{8,}", "AkankshaJadhav99 ");//true (Atleast 1 numeric number in password)
         System.out.println("Password Number 3 : " + password_3);
+
+        boolean password_4 = Pattern.matches("(?=.*[A-Z])(?=.*\\d)(?=.*[$&+,:;=?@#|'<>.-^*()%!])[a-z A-Z 0-9 $&+,:;=?@#|'<>.-^*()%!]{8,}", "AkankshaJadhav@99 ");//true (Atleast 1 special character in password)
+        System.out.println("Password Number 4 : " + password_4);
     }
 }
