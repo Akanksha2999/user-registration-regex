@@ -12,5 +12,7 @@ public class UserRegistration {
         boolean lastName = Pattern.matches("[A-Z][a-z]{3,10}", "Jadhav");//true (A to Z comes one time and a to z comes atleast 3 times and maximum 10 times)
         System.out.println("Last Name : " + lastName);
 
+        boolean emailId = Pattern.matches("[a-z][a-z A-Z 0-9]+[@][a-z]+[.][a-z]{2,5}", "akankshajadhav2999@gmail.com");//true (a to z one time then a to z or A to Z or O to 9 multiple times then special character "@" then a to z multiple times then special character "." and lastly a to z minimum 2 times and maximum 5 times)
+        System.out.println("Email Id : " + emailId);
     }
 }
