@@ -17,5 +17,8 @@ public class UserRegistration {
 
         boolean mobileNumber = Pattern.matches("[+]91 [6789][0-9]{9}", "+91 8828166460");//true (a to z one time then a to z or A to Z or O to 9 multiple times then special character "@" then a to z multiple times then special character "." and lastly a to z minimum 2 times and maximum 5 times)
         System.out.println("Mobile Number : " + mobileNumber);
+
+        boolean password_1 = Pattern.matches("[a-z A-Z]{8,}", "akankshaJadhav ");//true (a to z one time then a to z or A to Z or O to 9 multiple times then special character "@" then a to z multiple times then special character "." and lastly a to z minimum 2 times and maximum 5 times)
+        System.out.println("Password Number 1 : " + password_1);
     }
 }
