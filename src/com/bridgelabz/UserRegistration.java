@@ -7,8 +7,10 @@ public class UserRegistration {
 
         System.out.println("Welcome to user registration program");
         boolean firstName = Pattern.matches("[A-Z][a-z]{3,15}", "Akanksha");//true (A to Z comes one time and a to z comes atleast 3 times and maximum 15 times)
-
         System.out.println("First Name : " + firstName);
+
+        boolean lastName = Pattern.matches("[A-Z][a-z]{3,10}", "Jadhav");//true (A to Z comes one time and a to z comes atleast 3 times and maximum 10 times)
+        System.out.println("Last Name : " + lastName);
 
     }
 }
