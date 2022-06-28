@@ -22,7 +22,10 @@ public class UserRegistration {
         boolean password_1 = Pattern.matches("[a-z A-Z]{8,}", "akankshaJadhav ");//true (a to z one time then a to z or A to Z or O to 9 multiple times then special character "@" then a to z multiple times then special character "." and lastly a to z minimum 2 times and maximum 5 times)
         System.out.println("Password Number 1 : " + password_1);
 
-        boolean password_2 = Pattern.matches("(?=.*[A-Z])[a-z A-Z]{8,}", "AkankshaJadhav ");//true (a to z one time then a to z or A to Z or O to 9 multiple times then special character "@" then a to z multiple times then special character "." and lastly a to z minimum 2 times and maximum 5 times)
+        boolean password_2 = Pattern.matches("(?=.*[A-Z])[a-z A-Z]{8,}", "AkankshaJadhav ");//true (Atleast 1 uppercase in password)
         System.out.println("Password Number 2 : " + password_2);
+
+        boolean password_3 = Pattern.matches("(?=.*[A-Z])(?=.*\\d)[a-z A-Z 0-9]{8,}", "AkankshaJadhav99 ");//true (Atleast 1 numeric number in password)
+        System.out.println("Password Number 3 : " + password_3);
     }
 }
